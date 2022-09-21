@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">GYM</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li> <a href="#home">HOME</a> </li>
+                <li> <a href="#about">ABOUT</a> </li>
+                <li> <a href="#technical">SERVICES</a> </li>
+                <li> <a href="#projects">MEMBER BENIFITS</a> </li>
+            </ul>
+        </header>
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2><span> FITNESS AND GYMNASTICS</span></h2>
+                <h3>Fitness training and classes</h3>
+                <a href="#about" class="btn">View schedule</a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="heading">
+                <h2></h2>
+                <br>
+            </div>
+            <div class="content">
+                <div class="heading white">
+                    <h2>SCHEDULE</h2>
+                    <br>
+                </div>
+                <div class="contentBx w50">
+                    <p><b>WEEKDAYS:7:00 am to 8:00 am </b></p><br>
+                    <p>Basic fitness and daily practice for beginners by lilly</p><br>
+                    <p><b>WEEKDAYS:8:00 am to 9:30 am </b></p><br>
+                    <p>Advanced Weight lifting and traning for  expertss</p>
+                </div>
+                <div class="w50">
+                    <img src="background.jpg" class="img">
+                </div>
+            </div>
+            
+        </section>
+        <section class="technical" id="technical">
+            <div class="heading white">
+                <h2>OUR SERVICES</h2>
+                <br>
+                <p>Here are some of the fitness services we provide.</p>
+            </div>
+            <div class="content">
+                <div class="technicalBx">
+                    <img src="background.jpg">
+                    <br><br>
+                    <h2>WEIGHT LIFTING</h2>
+                    <br>
+                    <p>The best way to gain muscles.Good for every part of the body.Practice daily or weekly.</p>
+                </div>
+                <div class="technicalBx">
+                    <img src="background.jpg">
+                    <br><br>
+                    <h2>PERSONAL TRAINING</h2>
+                    <br>
+                    <p>Our specially designed program to help newbies.The personal trainer will guide you.</p>
+                </div>
+                <div class="technicalBx">
+                    <img src="background.jpg">
+                    <br><br>
+                    <h2>INDOOR RUNNING</h2>
+                    <br>
+                    <p>The easy way to get fitness.Imported Threadmill helps you to become it easily.</p>
+                </div>
+                <div class="technicalBx">
+                    <img src="background.jpg">
+                    <br><br>
+                    <h2>LADIES FITNESS</h2>
+                    <br>
+                    <p>We have an exclusive training for ladies only.It aims for self protection and fitness.</p>
+                </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="heading">
+                <h2>MEMBER BENIFITS</h2>
+                <br>
+                <p>Here is a list why you should join our club</p>
+            </div><b><center>
+            <p>Wide variety of cardio<br><br>
+
+                Spend 40 minutes a day<br><br>
+
+                Fun and challenging<br><br>
+
+                Group Exercise classes<br><br>
+
+                Certified Personal Trainers<br><br>
+
+                Achieve your fitness goals<br><br>
+                Dedicated stretching space<br><br>
+
+                TRX® Suspension Training<br><br>
+               
+                Strengthen your health and body<br><br>
+               
+                Lap pools, saunas and steam rooms<br><br>
+               
+               Fun and active Kids’ Club<br><br>
+               
+                and much more...</p></b>
+            </center>
+            <div class="heading">
+               <a href="#" class="btn">View more</a>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('active');
+        }
+        </script>
+    </body>
+</html>
